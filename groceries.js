@@ -3,13 +3,9 @@ function addItem()
   var input = document.getElementById("newItem").value;
   var list = document.getElementById("listDisplay");
   var item = document.getElementById("li");
-  //This creates a new list item element for the document object model (DOM)
   var itemName = document.createTextNode(input);
-  //This creates plain text element from the value of the variable input to put in the DOM
   item.appendChild(itemName);
-  //This puts that plain text element as the innerHTML (child)
   list.appendChild(item);
-  //This puts the li element (item) inside the ul in the document (list) so it can be seen on the screen
   document.getElementById("newItem").value = "";
 }
 
